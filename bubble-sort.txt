@@ -1,0 +1,30 @@
+//***********************BUBBLE SORT********************
+// Online C compiler to run C program online
+
+
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    scanf("%d",&n);
+    int arr[n];
+    for(i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    
+    int counter=1,temp;
+    while(counter<n){
+        for(i=0;i<n-counter;i++){
+            if(arr[i]>arr[i+1]){
+                temp=arr[i+1];
+                arr[i+1]=arr[i];
+                arr[i]=temp;
+            }
+        }
+        counter++;
+    }
+    for(i=0;i<n;i++){
+    printf("%d  ",arr[i]);
+    }
+    return 0;
+}
