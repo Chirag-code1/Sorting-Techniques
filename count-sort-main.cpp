@@ -16,7 +16,7 @@ void countsort(int arr[], int n){
     }
     
     for(i=1;i<=k;i++){
-        count[i]+=count[i-1];
+        count[i]+= count[i-1];
     }
     
     int brr[n];
