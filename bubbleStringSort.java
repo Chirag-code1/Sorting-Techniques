@@ -25,7 +25,7 @@ class Main
     
     public static void main(String[] args)
     {
-        String[] arr = { "Coding" };
+        String[] arr = { "Coding" "challenge" };
         int n = arr.length;
         sortStrings(arr, n);
         System.out.println("Strings in sorted order are : ");
